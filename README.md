@@ -15,7 +15,7 @@ This dataset has been prepared with the help of 7 subjects of whom 5 were male a
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/8.png" alt="FriendsDB8" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/9.png" alt="FriendsDB9" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/10.png" alt="FriendsDB10" style="width:200px;"/>
-<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/11.png" alt="FriendsDB11" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/11.png" alt="FriendsDB11" style="width:200px;height:250px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/12.png" alt="FriendsDB12" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/13.jpg" alt="FriendsDB13" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/14.jpg" alt="FriendsDB14" style="width:200px;"/>
