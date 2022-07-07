@@ -62,7 +62,7 @@ Vital points to be followed while shooting the videos:
 -	Make sure the subject's face covers 40-50% of the video frames
 -	Repeat the same procedure given above for each subject. Thus, in total, there will be six 20-second videos for each subject we intend to include in the dataset.
 
-An example of "The subject should be wearing spectacles and smiling" to help you understand the requirement can be found here.
+An example of "The subject should be wearing spectacles and smiling" to help you understand the requirement can be found <a href="https://drive.google.com/file/d/1qJMSfXdCw0Q3eMwdWx8bfVn4rXdGvyYF/view?usp=sharing">here</a>.
 
 <strong>Phase – 2:</strong>  After obtaining the videos, follow the steps below to perform first-hand dataset preparation:
 
@@ -70,11 +70,11 @@ An example of "The subject should be wearing spectacles and smiling" to help you
 -	Label each frame stored according to the subject present in it.
 -	Shortlist 10 images from frames obtained and stored from each of the videos shot. Make sure to shortlist such that you will have a good mix of poses (be slightly biased over images facing directly to the camera, let them be more in number than the other poses).
 -	After the preceding step, you are left with 60 images of each subject with 10 images of each of the 6 conditions illustrated before. This will result in a dataset of size (60 x no. of subjects)
--	Remove the background from each of the images using online tools like remove.bg or Photo Editor apps on your mobile. You can remove background for multiple images at a time using the Windows app version of remove.bg (this step is not needed if the background used while shooting the videos is completely plain without any objects)
+-	Remove the background from each of the images using online tools like <a href="https://remove.bg/">remove.bg</a> or Photo Editor apps on your mobile. You can remove background for multiple images at a time using the Windows app version of <a href="https://remove.bg/">remove.bg</a> <em>(this step is not needed if the background used while shooting the videos is completely plain without any objects)</em>
 
 <strong>Phase 3:</strong> After completing Phase 2, follow the following steps to perform data augmentation so as to increase the dataset size and variations:
 
--	Download FaceApp from Play Store on your mobiles to perform facial hair augmentation
+-	Download <a href="https://www.faceapp.com/">FaceApp</a> from Play Store on your mobiles to perform facial hair augmentation
 -	For male subjects, the following filters can be applied to each of their images in the dataset prepared in the preceding phase:
 -	Hair Style Filters: Original, Haircut, Long 2, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Hitman, Wavy, Straight
 -	Beard Filters: Original, Full Beard, Hipster, Goatee, Moustache, Lion, Petite Goatee
