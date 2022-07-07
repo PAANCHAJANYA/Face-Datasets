@@ -76,29 +76,54 @@ An example of "The subject should be wearing spectacles and smiling" to help you
 
 *	Download <a href="https://www.faceapp.com/">FaceApp</a> from Play Store on your mobiles to perform facial hair augmentation
 *	For male subjects, the following filters can be applied to each of their images in the dataset prepared in the preceding phase:
-<ul>
-  <li>Hair Style Filters: Original, Haircut, Long 2, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Hitman, Wavy, Straight</li>
- <li>Beard Filters: Original, Full Beard, Hipster, Goatee, Moustache, Lion, Petite Goatee</li>
-</ul>
+* Hair Style Filters: Original, Haircut, Long 2, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Hitman, Wavy, Straight
+* Beard Filters: Original, Full Beard, Hipster, Goatee, Moustache, Lion, Petite Goatee
 *	For female subjects, the following filters can be applied to each of their images in the dataset prepared in the preceding phase:
-  <ul><li>Hair Style Filters: Original, Haircut, Long, Bob Cut, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Wavy, Straight</li></ul>
+* Hair Style Filters: Original, Haircut, Long, Bob Cut, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Wavy, Straight
 *	Thus, if we apply every combination of facial hair filters, for each image of a male subject in the dataset prepared in the preceding phase, 84 more images will be generated. In the case of female subjects, for each image of a female subject in the dataset prepared in the preceding phase, 12 more images will be generated.
 *	Include all the images generated in the preceding step in the dataset and label them according to the subject whose face it constitutes
 *	Use a python script written using OpenCV to apply different brightness and contrast settings on each of the images included in the dataset till now to increase the dataset size and variance in terms of illumination. Label the images accordingly.
 *	Use a python script written using OpenCV to resize the images available in the dataset as of now to different lower resolutions to encompass FRAD (Face Recognition at a distance). Label the images accordingly.
 
+## CID
 
-After completing all the phases listed above, the reader will obtain an extensive face dataset containing images of the subjects in different illumination conditions, poses (angles), distance from the camera, facial hair configurations, and facial expression.
+We utilized some of the episodes of a famous Hindi TV show titled CID for preparing this dataset. The episodes we used are posted on YouTube under “Creative Common License”. After procuring the episodes, we used Multi-Task Cascade Convolutional Neural Network (MTCNN) to detect and store faces from every 10th frame of each episode. From the face images which are stored, we manually deleted images of subjects who were not part of the main cast of the show. This is because recurring characters i.e., the main cast cater more images in the dataset than the others. We also deleted images which were either blur or have too less resolution. Thus, we created an extensive dataset of 12 individuals. Each of the 12 individuals has a variety of face-images with different angles, expressions, mouth movement, etc. The training and test set has been split in 70:30 ratio with respect to each subject.
 
 
-Major cities in India are dealing with increasing road traffic which directly impacts emergency services like ambulances, leading to a **delay in admitting critical patients** in the hospital on time. In emergency conditions the patient must get to the hospital as soon as possible. But in many cities, it is common to see **ambulances unable to commute in major traffic jams** and get to the hospital on time. The Hospital or a private firm that owns an ambulance is not always aware about the **live location** of the ambulance and the **working condition of the paramedic equipment** like
-- Suction Units
-- ECG Monitors
-- Defibbrillator, etc.,
-
-deployed in it. Also, there are no means through which the hospital to which the patient is taken know the patient's details and his/her condition when under paramedic supervision i.e., while in the ambulance is enroute to the hospital.
-
-Through this web application, we can aim to solve such critical problems and may thereby help a tender life live longer.
+<div style="display:grid; grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; grid-row-gap: 20px;grid-column-gap: 30px;">
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/29.jpg" alt="CID1" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/30.jpg" alt="CID2" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/31.jpg" alt="CID3" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/32.jpg" alt="CID4" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/33.png" alt="CID5" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/34.png" alt="CID6" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/35.png" alt="CID7" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/36.png" alt="CID8" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/37.png" alt="CID9" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/38.png" alt="CID10" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/39.png" alt="CID11" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/40.png" alt="CID12" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/41.jpg" alt="CID13" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/42.jpg" alt="CID14" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/43.jpg" alt="CID15" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/44.jpg" alt="CID16" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/45.jpg" alt="CID17" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/46.png" alt="CID18" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/47.png" alt="CID19" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/48.jpg" alt="CID20" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/49.png" alt="CID21" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/50.png" alt="CID22" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/51.png" alt="CID23" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/52.png" alt="CID24" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/53.png" alt="CID25" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/54.png" alt="CID26" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/55.png" alt="CID27" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/56.png" alt="CID28" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/57.png" alt="CID29" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/58.png" alt="CID30" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/59.png" alt="CID31" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/60.png" alt="CID32" style="width:100px;height:100px;"/>
+</div>
 
 ### Project Description
 To overcome the challenges pondered over in the problem statement, I ideated a web application with the following functionalities:
