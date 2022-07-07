@@ -35,6 +35,60 @@ This dataset has been prepared with the help of 7 subjects of whom 5 were male a
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/28.png" alt="FriendsDB28" style="width:200px;"/>
 </div>
 
+### The Dataset Preparation Protocol:
+
+In case the reader intends to prepare a dataset similar to FriendsDB, they can follow the procedure mentioned hereafter:
+
+<strong>Devices Required:</strong> A mobile phone with a camera of a minimum 13 MP resolution and a computer with Python IDLE.
+
+<strong>The Process:</strong>
+
+The process of preparing such a dataset is performed in three phases.
+
+<strong>Phase – 1:</strong> In each of the conditions listed below, shoot a 20-second video of the subject with his/her head rotating from 90° to the right to 90° to the left keeping his/her face upright:
+-	The subject should be wearing spectacles and smiling
+-	The subject should be wearing spectacles and showing no facial expression.
+-	The subject should be wearing spectacles and showing a sad facial expression.
+-	The subject should not be wearing any spectacles. He/she should be smiling.
+-	The subject should not be wearing any spectacles. He/she shouldn't show any facial expression.
+-	The subject should not be wearing any spectacles. He/she should show a sad facial expression.
+
+Vital points to be followed while shooting the videos:
+
+-	The subject should move his head in a slow and uniform manner.
+-	Let the subject pause the movement of his head for a few seconds when he/she faces directly into the camera.
+-	Shoot the videos in the presence of a uniform light source (preferably, the sun) so that there is no shadow on any part of the subject's face (make sure the video is not too illuminated)
+-	Let the subject's video be shot with a plain background (preferably white)
+-	Make sure the subject's face covers 40-50% of the video frames
+-	Repeat the same procedure given above for each subject. Thus, in total, there will be six 20-second videos for each subject we intend to include in the dataset.
+
+An example of "The subject should be wearing spectacles and smiling" to help you understand the requirement can be found here.
+
+<strong>Phase – 2:</strong>  After obtaining the videos, follow the steps below to perform first-hand dataset preparation:
+
+-	Starting from the 5th frame, obtain every 10th frame of each of the six videos of each subject shot before and store them.
+-	Label each frame stored according to the subject present in it.
+-	Shortlist 10 images from frames obtained and stored from each of the videos shot. Make sure to shortlist such that you will have a good mix of poses (be slightly biased over images facing directly to the camera, let them be more in number than the other poses).
+-	After the preceding step, you are left with 60 images of each subject with 10 images of each of the 6 conditions illustrated before. This will result in a dataset of size (60 x no. of subjects)
+-	Remove the background from each of the images using online tools like remove.bg or Photo Editor apps on your mobile. You can remove background for multiple images at a time using the Windows app version of remove.bg (this step is not needed if the background used while shooting the videos is completely plain without any objects)
+
+<strong>Phase 3:</strong> After completing Phase 2, follow the following steps to perform data augmentation so as to increase the dataset size and variations:
+
+-	Download FaceApp from Play Store on your mobiles to perform facial hair augmentation
+-	For male subjects, the following filters can be applied to each of their images in the dataset prepared in the preceding phase:
+-	Hair Style Filters: Original, Haircut, Long 2, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Hitman, Wavy, Straight
+-	Beard Filters: Original, Full Beard, Hipster, Goatee, Moustache, Lion, Petite Goatee
+-	For female subjects, the following filters can be applied to each of their images in the dataset prepared in the preceding phase:
+-	Hair Style Filters: Original, Haircut, Long, Bob Cut, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Wavy, Straight
+-	Thus, if we apply every combination of facial hair filters, for each image of a male subject in the dataset prepared in the preceding phase, 84 more images will be generated. In the case of female subjects, for each image of a female subject in the dataset prepared in the preceding phase, 12 more images will be generated.
+-	Include all the images generated in the preceding step in the dataset and label them according to the subject whose face it constitutes
+-	Use a python script written using OpenCV to apply different brightness and contrast settings on each of the images included in the dataset till now to increase the dataset size and variance in terms of illumination. Label the images accordingly.
+-	Use a python script written using OpenCV to resize the images available in the dataset as of now to different lower resolutions to encompass FRAD (Face Recognition at a distance). Label the images accordingly.
+
+
+After completing all the phases listed above, the reader will obtain an extensive face dataset containing images of the subjects in different illumination conditions, poses (angles), distance from the camera, facial hair configurations, and facial expression.
+
+
 Major cities in India are dealing with increasing road traffic which directly impacts emergency services like ambulances, leading to a **delay in admitting critical patients** in the hospital on time. In emergency conditions the patient must get to the hospital as soon as possible. But in many cities, it is common to see **ambulances unable to commute in major traffic jams** and get to the hospital on time. The Hospital or a private firm that owns an ambulance is not always aware about the **live location** of the ambulance and the **working condition of the paramedic equipment** like
 - Suction Units
 - ECG Monitors
