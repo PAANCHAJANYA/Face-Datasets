@@ -4,6 +4,7 @@
 
 This dataset has been prepared with the help of 7 subjects of whom 5 were male and 2 were female. We obtained 132 images of each female subject and 564 images of each male subject. The training and test set has been split in 70:30 ratio with respect to each subject. The dataset includes pictures of individuals with/ without spectacles, having displayed different poses, expressions, in different illumination conditions and facial hair configurations.
 
+<div style="display:grid; grid-template-columns: 200px 200px 200px 200px 200px 200px; grid-row-gap: 20px;grid-column-gap: 30px;">
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/1.jpg" alt="FriendsDB1" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/2.jpg" alt="FriendsDB2" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/3.jpg" alt="FriendsDB3" style="width:200px;"/>
@@ -32,6 +33,7 @@ This dataset has been prepared with the help of 7 subjects of whom 5 were male a
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/26.png" alt="FriendsDB26" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/27.png" alt="FriendsDB27" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/28.png" alt="FriendsDB28" style="width:200px;"/>
+</div>
 
 Major cities in India are dealing with increasing road traffic which directly impacts emergency services like ambulances, leading to a **delay in admitting critical patients** in the hospital on time. In emergency conditions the patient must get to the hospital as soon as possible. But in many cities, it is common to see **ambulances unable to commute in major traffic jams** and get to the hospital on time. The Hospital or a private firm that owns an ambulance is not always aware about the **live location** of the ambulance and the **working condition of the paramedic equipment** like
 - Suction Units
