@@ -1,14 +1,37 @@
 # Face Datasets
 
-Various face datasets are available open-source for face recognition researchers. Most of the images in these datasets are acquired particularly to study face recognition. In addition to the already existing datasets, we have prepared 4 new datasets for the main purpose of obtaining wide variety of face images with respect to illumination conditions, pose, angles, and facial expressions in order to obtain diverse datasets which will help in achieving a robust trained model for face recognition. All these datasets are used in the evaluation of the Machine Learning and Deep Learning approaches we intend to discuss.
-
-The datasets described in subsections 3.1 to 3.4 below are the ones prepared by our team. The metadata of the datasets we procured from the literature are described in table 3.1. The dataset preparation protocol for each of the datasets prepared for the purpose of this study are also provided.
-
 ## FriendsDB
 
 This dataset has been prepared with the help of 7 subjects of whom 5 were male and 2 were female. We obtained 132 images of each female subject and 564 images of each male subject. The training and test set has been split in 70:30 ratio with respect to each subject. The dataset includes pictures of individuals with/ without spectacles, having displayed different poses, expressions, in different illumination conditions and facial hair configurations.
 
-
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/1.jpg" alt="FriendsDB1" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/2.jpg" alt="FriendsDB2" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/3.jpg" alt="FriendsDB3" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/4.jpg" alt="FriendsDB4" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/5.png" alt="FriendsDB5" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/6.png" alt="FriendsDB6" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/7.png" alt="FriendsDB7" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/8.png" alt="FriendsDB8" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/9.png" alt="FriendsDB9" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/10.png" alt="FriendsDB10" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/11.png" alt="FriendsDB11" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/12.png" alt="FriendsDB12" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/13.jpg" alt="FriendsDB13" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/14.jpg" alt="FriendsDB14" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/15.jpg" alt="FriendsDB15" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/16.jpg" alt="FriendsDB16" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/17.jpg" alt="FriendsDB17" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/18.jpg" alt="FriendsDB18" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/19.jpg" alt="FriendsDB19" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/20.jpg" alt="FriendsDB20" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/21.png" alt="FriendsDB21" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/22.png" alt="FriendsDB22" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/23.png" alt="FriendsDB23" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/24.png" alt="FriendsDB24" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/25.png" alt="FriendsDB25" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/26.png" alt="FriendsDB26" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/27.png" alt="FriendsDB27" style="width:200px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/28.png" alt="FriendsDB28" style="width:200px;"/>
 
 Major cities in India are dealing with increasing road traffic which directly impacts emergency services like ambulances, leading to a **delay in admitting critical patients** in the hospital on time. In emergency conditions the patient must get to the hospital as soon as possible. But in many cities, it is common to see **ambulances unable to commute in major traffic jams** and get to the hospital on time. The Hospital or a private firm that owns an ambulance is not always aware about the **live location** of the ambulance and the **working condition of the paramedic equipment** like
 - Suction Units
