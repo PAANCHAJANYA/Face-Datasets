@@ -141,49 +141,71 @@ We utilized some of the episodes of a famous Hindi TV show titled CID for prepar
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(76).jpg" alt="CID48" style="width:100px;height:100px;"/>
 </div>
 
-### Project Description
-To overcome the challenges pondered over in the problem statement, I ideated a web application with the following functionalities:
-1. **Live Tracking of the Ambulance:** A Live Location feature is implemented through which the paramedic staff of an ambulance can share their live location with the hospital that owns the ambulance. We could further extend this functionality such that the live location data is shared even with the hospital or any medical institute to which the patient is taken for admission.
-2. **Equipment Damage Control:** The paramedic staff can also update the status of life-saving equipment in the ambulance which can be used in replacing the worn-out devices.
-3. **Patient Information Management:** The paramedic staff could share information about the patient's personal details and health condition to the hospital that owns it, so that they can do necessary arrangements for patients’ treatment. The information includes:
+### The Dataset Preparation Protocol
+In case the reader intends to prepare a dataset similar to CID, they can follow the procedure mentioned hereafter:
 
-   + Personal details like name, sex, age, contact no., and residential address
-   + Health emergency details
-   + Patient Attendee details
-   + Chronic medical conditions the patient is already suffering from
-   + Allergies the patient has (if any)
-   + Blood Glucose levels (Blood Sugar) information computed using Glucometer
-   + %Sp O2 - Proportion of Oxygenated Haemoglobin
-   + Pulse Rate (bpm)
-## Azure Services used
-* **Azure App Service** to host the PHP Web App: B1 Plan (free for a month)
-* **Azure SQL Database** to host the DBMS Server: Compute Gen5 General Purpose Serverless Architecure (vCore based pricing tier)
-## User Interface
-### Sign In
-Use any of the below listed credentials in order to login to ambulancequipo.
-* The ID starting with A belongs to the Admin
-* The IDs starting with M belong to Management
-* The IDs starting with D belong to paramedic staff
+<strong>Devices Required:</strong> A mobile phone with a camera of a minimum 13 MP resolution and a computer with Python IDLE.
 
-|        ID        | Password
-|----------------|--------------------
-|A001|`pass111`
-|M001|`pass001`
-|M002|`pass002`
-|D001|`pass011`
-|D002|`pass012`
+<strong>The Process:</strong>
 
-![Sign in UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/signin.png)
-### User Roles, their scope of operation and UI
-* **Admin:** The admin can add new management accounts. He can also view the hierarchy of ambulancequipo users i.e., a tree diagram illustrating the cities, hospital managements registered with ambulancequipo in that city and the ambulances working under them.
-![Admin UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/admin.png?raw=true)
-* **Management:** The management can live track its ambulances which are active at the moment or view the history of the management's ambulances that have transported patients. The management can also view equipement damage complaints and mark them resolved if and when rectified.
-![Management UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/management1.png?raw=true)
-![Management UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/management2.png?raw=true)
-![Management UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/management3.png?raw=true)
-![Management UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/management4.png?raw=true)
-![Management UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/management5.png?raw=true)
-* **Paramedic Staff:** Paramedic Staff can fill a form to mention personal and emergency details of the patient it is transporting to a medical facility. After filling the form they can start sharing the live location of their ambulance to be live tracked by the management. In addition, they can file an equipment complaint such that the management can know the damaged equipment's details and resolve them as and when needed.
-![Driver UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/driver1.png?raw=true)
-![Driver UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/driver2.png?raw=true)
-![Driver UI](https://github.com/PAANCHAJANYA/ambulancequipo/blob/main/README_images/driver3.png?raw=true)
+The process of preparing such a dataset is performed with the help of following steps:
+-	This dataset doesn’t need subjects to volunteer in its preparation. Thus, the reader must choose video content available in the internet (preferably a television show) which is either not bound by any copyrights or is released on YouTube under “Creative Commons License”. The owner of the Creative Common licensed videos grants any viewer the permission to use their work.
+-	After obtaining the video content enough to prepare the intended size of face dataset, we run a MATLAB or Python script that uses Multi-Task Cascade Convolutional Networks (MTCNN) to detect and store faces from every 10th frame of each of the videos.
+-	We then manually delete images of subjects whose faces are low in number and the ones which are of too less resolution.
+-	Label the images in accordance with the subject whose face they constitute.
+
+After completing all the steps mentioned above, the reader will obtain an extensive face dataset containing images of the subjects chosen in different poses (angles), distance from the camera, and facial expression.
+
+## Big Bang Theory
+
+We utilized some of the episodes of the famous “Big Bang Theory” TV show for preparing this dataset. The episodes we used are posted on YouTube under “Creative Common License”. After procuring the episodes, we used MTCNN to detect and store faces from every 10th frame of each episode. From the face images which are stored, we manually deleted images of subjects who were not part of the main cast of the show. We also deleted images which were either blur or have too less resolution. Thus, we created an extensive dataset of 7 individuals. The training and test set has been split in 70:30 ratio with respect to each subject.
+
+<div style="display:grid; grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; grid-row-gap: 20px;grid-column-gap: 30px;">
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(77).jpg" alt="BBT1" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(78).jpg" alt="BBT2" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(79).jpg" alt="BBT3" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(80).jpg" alt="BBT4" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(81).jpg" alt="BBT5" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(82).jpg" alt="BBT6" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(83).jpg" alt="BBT7" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(84).jpg" alt="BBT8" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(85).jpg" alt="BBT9" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(86).jpg" alt="BBT10" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(87).jpg" alt="BBT11" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(88).jpg" alt="BBT12" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(89).jpg" alt="BBT13" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(90).jpg" alt="BBT14" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(91).jpg" alt="BBT15" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(92).jpg" alt="BBT16" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(93).jpg" alt="BBT17" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(94).jpg" alt="BBT18" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(95).jpg" alt="BBT19" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(96).jpg" alt="BBT20" style="width:100px;height:100px;"/>
+</div>
+
+## Agnisakshi
+
+We utilized some of the promotional content for a famous Kannada TV show titled Agnisakshi available in YouTube for preparing this dataset. The promotional videos we used are posted on YouTube under “Creative Common License”. After procuring the videos, we used MTCNN to detect and store faces from every 10th frame of each episode. From the face images which are stored, we manually deleted images of subjects who were not part of the main cast of the show. We also deleted images which were either blur or have too less resolution. Thus, we created an extensive dataset of 14 individuals. The training and test set has been split in 70:30 ratio with respect to each subject.
+
+<div style="display:grid; grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; grid-row-gap: 20px;grid-column-gap: 30px;">
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(97).jpg" alt="AGN1" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(98).jpg" alt="AGN2" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(99).jpg" alt="AGN3" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(100).jpg" alt="AGN4" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(101).jpg" alt="AGN5" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(102).jpg" alt="AGN6" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(103).jpg" alt="AGN7" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(104).jpg" alt="AGN8" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(105).jpg" alt="AGN9" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(106).jpg" alt="AGN10" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(107).jpg" alt="AGN11" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(108).jpg" alt="AGN12" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(109).jpg" alt="AGN13" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(110).jpg" alt="AGN14" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(111).jpg" alt="AGN15" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(112).jpg" alt="AGN16" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(113).jpg" alt="AGN17" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(114).jpg" alt="AGN18" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(115).jpg" alt="AGN19" style="width:100px;height:100px;"/>
+<img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/(116).jpg" alt="AGN20" style="width:100px;height:100px;"/>
+</div>
