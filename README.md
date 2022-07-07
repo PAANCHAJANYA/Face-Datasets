@@ -4,7 +4,7 @@
 
 This dataset has been prepared with the help of 7 subjects of whom 5 were male and 2 were female. We obtained 132 images of each female subject and 564 images of each male subject. The training and test set has been split in 70:30 ratio with respect to each subject. The dataset includes pictures of individuals with/ without spectacles, having displayed different poses, expressions, in different illumination conditions and facial hair configurations.
 
-<div style="display:grid; grid-template-columns: 200px 200px 200px 200px 200px 200px; grid-row-gap: 20px;grid-column-gap: 30px;">
+<div style="display:grid; grid-template-columns: 200px 200px 200px 200px; grid-row-gap: 20px;grid-column-gap: 30px;">
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/1.jpg" alt="FriendsDB1" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/2.jpg" alt="FriendsDB2" style="width:200px;"/>
 <img src="https://github.com/PAANCHAJANYA/Face-Datasets/blob/main/README_Images/3.jpg" alt="FriendsDB3" style="width:200px;"/>
