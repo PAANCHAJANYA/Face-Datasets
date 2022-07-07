@@ -76,10 +76,12 @@ An example of "The subject should be wearing spectacles and smiling" to help you
 
 -	Download <a href="https://www.faceapp.com/">FaceApp</a> from Play Store on your mobiles to perform facial hair augmentation
 -	For male subjects, the following filters can be applied to each of their images in the dataset prepared in the preceding phase:
-   +	Hair Style Filters: Original, Haircut, Long 2, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Hitman, Wavy, Straight
-   +	Beard Filters: Original, Full Beard, Hipster, Goatee, Moustache, Lion, Petite Goatee
+<ol>
+   <li>Hair Style Filters: Original, Haircut, Long 2, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Hitman, Wavy, Straight</li>
+   <li>Beard Filters: Original, Full Beard, Hipster, Goatee, Moustache, Lion, Petite Goatee</li>
+</ol>
 -	For female subjects, the following filters can be applied to each of their images in the dataset prepared in the preceding phase:
-   +	Hair Style Filters: Original, Haircut, Long, Bob Cut, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Wavy, Straight
+<ol><li>Hair Style Filters: Original, Haircut, Long, Bob Cut, Bangs, Bangs2 (Grade 1, Grade 2, Grade 3), Side Swept, Straight Bangs, Wavy, Straight</li></ol>
 -	Thus, if we apply every combination of facial hair filters, for each image of a male subject in the dataset prepared in the preceding phase, 84 more images will be generated. In the case of female subjects, for each image of a female subject in the dataset prepared in the preceding phase, 12 more images will be generated.
 -	Include all the images generated in the preceding step in the dataset and label them according to the subject whose face it constitutes
 -	Use a python script written using OpenCV to apply different brightness and contrast settings on each of the images included in the dataset till now to increase the dataset size and variance in terms of illumination. Label the images accordingly.
